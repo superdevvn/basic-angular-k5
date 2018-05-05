@@ -5,6 +5,6 @@ function hello(firstName, lastName) {
     console.log(`Hello ${firstName} ${lastName}`);
 }
 
-var clickDemoTemplateLiterals = function (){
+var clickDemo2 = function (){
     hello('Nghia','Tran');
 }
