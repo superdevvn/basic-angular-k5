@@ -1,23 +1,19 @@
-function link(height?: number, color?: string, url?: string){
-    var height = height || 50;
-    var color = color || 'red';
-    var url = url || 'superdevvn.com';
-
-    console.log(height);
-    console.log(color);
-    console.log(url);
+class Person{
+    firstName: string;
+    lastName: string;
+}
+function hello(person?: Person){
+    person = person || {
+        firstName: 'Nghia',
+        lastName: 'Tran'
+    }
+    console.log(`Hello ${person.firstName} ${person.lastName}`);
 }
 
-function link2(height = 50, color = 'red', url = 'superdevvn.com'){
-    console.log(height);
-    console.log(color);
-    console.log(url);
-}
-var clickDemo1 = function (){
-    link();
-    link(100);
-    link(100,'blue');
-    // link2();
-    // link2(100);
-    // link2(100,'blue');
+function clickDemo1(){
+    var person = new Person();
+    person.firstName = 'Peter';
+    person.lastName = 'Dark';
+    hello();
+    hello(person);
 }

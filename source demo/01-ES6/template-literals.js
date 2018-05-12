@@ -8,9 +8,3 @@ function hello(firstName, lastName) {
 var clickDemo2 = function (){
     hello('Nghia','Tran');
 }
-
-var clickDemo1 = function (){
-    linjhgjhk2();
-    link2(100);
-    link2(100,'blue');
-}
