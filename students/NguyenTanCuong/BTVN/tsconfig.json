@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        //"outDir": "dist",
+        "removeComments": false,
+        "watch": true
+
+    },
+    "include": [
+        "src/*.ts"
+    ]
+}
