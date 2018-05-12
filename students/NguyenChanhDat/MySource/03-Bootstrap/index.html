@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="row" style="margin: 0%;">
+        <div id="bangten" class="jumbotron col-lg-12">
+            <h1 class="display-4">Welcome, hommie!</h1>
+            <p class="lead">There is something exciting about me, do you want to explore it. Let me introduce !
+            </p>
+            <hr class="my-4">
+            <p>Click button below to find me ♥.</p>
+            <p class="lead">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="clickbtn1()">
+                    Let's Go !!!
+                </button>
+            </p>
+        </div>
+    </div>
+    <div class="row" style="margin: 0%;">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hey</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you ready?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="clickGo()">Go</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0%;">
+        <div class="card col-lg-3">
+            <div class="card-body alert-primary">
+                <blockquote class="blockquote">
+                    <p>Alice Roosevelt</p>
+                    <p>
+                        <cite title="Source title"> I have a simple philosophy: Fill what’s empty. Empty what full. Scratch where it itches.</cite>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card col-lg-3">
+            <div class="card-body alert-primary">
+                <blockquote class="blockquote">
+                    <p>Lou Holtz</p>
+                    <p>
+                        <cite title="Source title"> Life is 10% what happens to you and 90% how you respond to it. Scratch where it itches</cite>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card col-lg-3">
+            <div class="card-body alert-primary">
+                <blockquote class="blockquote">
+                    <p>Marie Curie</p>
+                    <p>
+                        <cite title="Source title"> Nothing in life is to be feared, it’s to be understood. Now is the time to understand more, so that
+                            we may fear less.</cite>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card col-lg-3">
+            <div class="card-body alert-primary">
+                <blockquote class="blockquote">
+                    <p>Kevin Spacey</p>
+                    <p>
+                        <cite title="Source title"> People have different reasons for the way they live their life. You cannot put everyone’s reasons
+                            in the same box.</cite>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0%;">
+        <div class=" col-lg-3">
+            <div id="c1" class="card">
+                <img class="card-img-top" src="./img/Alice Roosevelt.jpg" alt="Alice Roosevelt" height="200px;" onclick="clickbtn1()">
+                <div class="card-body">
+                    <h5 class="card-title">Alice Roosevelt</h5>
+                    <p class="card-text">February 12, 1884–February 20,1980</p>
+                    <a id="btn1" href="#" class="btn btn-primary">Primary</a>
+                </div>
+            </div>
+        </div>
+        <div class=" col-lg-3">
+            <div  class="card">
+                <img id="c2" class="card-img-top" src="./img/Lou Holtz.jpg" alt="Lou Holtz" height="200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Lou Holtz</h5>
+                    <p class="card-text">Born January 6, 1937</p>
+                    <a id="btn2" data-toggle="tooltip" data-placement="top" title="Click vào Dark để làm mất Lou Holtz" href="#" class="btn btn-danger">Danger</a>
+                </div>
+            </div>
+        </div>
+        <div class=" col-lg-3">
+            <div id="c3" class="card">
+                <img class="card-img-top" src="./img/Marie Curie.jpg" alt="Marie Curie" height="200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Marie Curie</h5>
+                    <p class="card-text">7 November 1867 – 4 July 1934</p>
+                    <a id="btn3" href="#" class="btn btn-dark">Dark</a>
+                </div>
+            </div>
+        </div>
+        <div class=" col-lg-3">
+            <div id="c4" class="card">
+                <img class="card-img-top" src="./img/Kevin Spacey.jpg" alt="Kevin Spacey" height="200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Kevin Spacey</h5>
+                    <p class="card-text">Born July 26, 1959</p>
+                    <a id="btn4" href="#" class="btn btn-warning">Warning</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    function clickGo() {
+        // alert('Da kich vao btn1!');
+        $('#bangten').fadeOut();
+        $('#btn1').mouseenter(function () {
+            $('#btn1').text('Click vào ảnh của Alice Roosevelt')
+        });
+        $('#btn1').mouseleave(function () {
+            $('#btn1').text('Primary')
+        });
+    }
+    function clickbtn1() {
+        alert('Alice Roosevelt was an American writer and prominent socialite');
+    }
+    $('#btn3').click(function () {
+        $('#c2').toggle(2000);
+    });
+    $('#btn2').tooltip();
+    $('#btn4').click(function(){
+        
+    })
+</script>
+
+
+</html>
