@@ -26,15 +26,22 @@ function BtnClick3(){
 
 function BtnClick4(){
     $('#btn4').off('click');
-    $('#img4').toggle(5000);
+    $('#img3').toggle(5000);
 }
 
 $('#btn3').mouseenter(function(){
-    let text = 'Anyways';
+    let text = 'Turn On';
     $('#btn3').text(text);
 });
 $('#btn3').mouseleave(function(){
-    $('#btn3').text('Danger');
+    $('#btn3').text('Submit');
+});
+
+$('#node3a').mouseenter(function(){
+    $('#node3a').html('<img class="card-img-top" src="img/cpp_logo.png" height="220px" alt="ACM ICPC 2018">');
+});
+$('#node3a').mouseleave(function(){
+    $('#node3a').html('<img class="card-img-top" src="img/captain_chibi.jpg" height="220px" alt="ACM ICPC 2018">');
 });
 
 $('#btn4').tooltip();
