@@ -1,21 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import * as $ from 'jquery';
 @Component({
   selector: 'app-second-page',
   templateUrl: './second-page.component.html',
   styleUrls: ['./second-page.component.css']
 })
-export class SecondPageComponent implements OnInit {
-  username: string;
-  password: string;
+export class SecondPageComponent implements OnInit {\
+
+  @ViewChild('btnHover') btnHover: ElementRef;
+
   constructor() { 
-    this.username = "DarkPeter";
   }
 
   ngOnInit() {
   }
-  click(){
-    console.log(this.username);
-    console.log(this.password);
+  mouseenter(){
+    $(this.btnHover.nativeElement).toggleClass('btn-primary');
+  }
+  mouseleave(){
+    $(this.btnHover.nativeElement).toggleClass('btn-primary');
   }
 }
