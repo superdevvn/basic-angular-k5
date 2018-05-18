@@ -1,0 +1,104 @@
+<div class="container mb-3 col-lg-6 border border-secondary">
+    <div class="form-group">
+        <label for="yourname">*Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="yourname" placeholder="Please Enter Your Name...">
+    </div>
+    <div class="form-group">
+        <label for="birthday">*Birthday:</label>
+        <input type="date" class="form-control" [(ngModel)]="birthday">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="city">*City:</label>
+            <input type="text" class="form-control" [(ngModel)]="city" placeholder="Ho Chi Minh">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="state">*State:</label>
+            <select class="form-control" [(ngModel)]="state">
+                <option>Cambodia</option>
+                <option>East Timor</option>
+                <option>Indonesia</option>
+                <option>Laos</option>
+                <option>Malaysia</option>
+                <option>Myanmar</option>
+                <option>Philippines</option>
+                <option>Singapore</option>
+                <option>Thailand</option>
+                <option>Vietnam</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="zipcode">*Zip code:</label>
+            <input type="text" class="form-control" [(ngModel)]="zipcode" placeholder="700000">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">*Email:</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="email" placeholder="minhduc@email.ac.vn">
+        </div>
+    </div>
+    <div>
+        <label for="phonenumber">*Phone number:</label>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <select class="form-control" [(ngModel)]="dauso">
+                    <option>0165</option>
+                    <option>0166</option>
+                    <option>0167</option>
+                    <option>0168</option>
+                    <option>0169</option>
+                </select>
+            </div>
+            <div class="form-group col-md-8">
+                <input type="text" class="form-control" [(ngModel)]="phonenumber" placeholder="ex: 9875251">
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-4">
+            <span>
+                <input type="checkbox" [(ngModel)]="agreecheck"> I agree to the terms
+            </span>
+        </div>
+        <div class="col-md-8 text-right">
+            <button class="btn btn-info" (click)="Register();">Register</button>
+        </div>
+    </div>
+    <div class="row mt-5 offset-md-4 offset-lg-3 offset-sm-3 col-md-6 col-sm-12">
+        <div class="card mb-3 border-danger">
+            <div class="card-header bg-warning">Personal Information License</div>
+            <div class="card-body text-white bg-dark">
+                <h5 class="card-title">{{yourname}}</h5>
+                <p class="card-text">Birthday: {{birthday}}</p>
+                <p class="card-text">Email: {{email}}</p>
+                <p class="card-text">Phone number: {{dauso}}{{phonenumber}}</p>
+                <div class="row">
+                    <div class="card-text col-md-4">
+                        <span class="badge badge-success">
+                            <strong>*City</strong>
+                        </span>
+                        <p>{{city}}</p>
+                    </div>
+                    <div class="card-text col-md-4">
+                        <span class="badge badge-success">
+                            <strong>*State</strong>
+                        </span>
+                        <p>{{state}}</p>
+                    </div>
+                    <div class="card-text col-md-4">
+                        <span class="badge badge-success">
+                            <strong>*Zip</strong>
+                        </span>
+                        <p>{{zipcode}}</p>
+                    </div>
+                </div>
+                <p class="card-text text-center" id="verify">{{verify}} </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>

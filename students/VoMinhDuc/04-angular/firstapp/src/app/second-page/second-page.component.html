@@ -1,0 +1,16 @@
+<div class="offset-md-4 col-md-4">
+  <input type="text" class="form-control" [(ngModel)]="input1">
+  <label class="text-primary">
+    <strong>Your input: </strong>
+    <i class="text-danger">{{input1}}</i>
+  </label>
+</div>
+<div class="offset-md-4 col-md-4">
+  <button class="btn" id="btnHover" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">Hover</button>
+</div>
+<div class="offset-md-4 col-md-4">
+  <button class="btn" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">Hover</button>
+</div>
+<div class="offset-md-4 col-md-4">
+  <button class="btn" #btnHover (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">Hover</button>
+</div>
