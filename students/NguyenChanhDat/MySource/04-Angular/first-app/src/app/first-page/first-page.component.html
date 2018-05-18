@@ -1,0 +1,21 @@
+<div class="offset-md-4 col-md-4">
+  <label>User name</label>
+  <input class="form-control" [(ngModel)]="username" placeholder="Write your name...">
+</div>
+<div class="offset-md-4 col-md-4">
+  <label>Password</label>
+  <input type="password" class="form-control" [(ngModel)]="password">
+</div>
+<div class="offset-md-4 col-md-4">
+  <label>Role</label>
+  <select class="form-control" [(ngModel)]="role">
+    <option>Admin</option>
+    <option>User</option>
+  </select>
+</div>
+<div class="offset-md-4 col-md-4 text-right mt-2">
+  <span class="float-left">
+    <input type="checkbox" [(ngModel)]="rememberMe"> Remember Me</span>
+  <button class="btn btn-primary" (click)="click()">Login</button>
+</div>
+<div class="clearfix"></div>
