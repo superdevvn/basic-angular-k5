@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="row" style="margin:0">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-secondary" role="alert">
+                A simple secondary alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-warning" role="alert">
+                A simple warning alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-info" role="alert">
+                A simple info alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-light" role="alert">
+                A simple light alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="alert alert-dark" role="alert">
+                A simple dark alert—check it out!
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+                    so that you can see how spacing within an alert works with this kind of content.</p>
+                <hr>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                <button type="button" class="btn btn-success" onclick="" id="btn1">Success</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+                so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            <button type="button" class="btn btn-danger" id="btn2">Danger</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+                so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            <button type="button" class="btn btn-warning" id="btn3">Warning</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+                so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            <button type="button" class="btn btn-info" id="btn4 class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top"">Info</button>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+
+    function btn1(){
+        alert('Button1 Clicked');
+    $('#btn4').click(function () {
+        alert("btn4 Clicker");
+        $('$alert3').toggleClass('alert-Success');
+    });
+    }
+
+    $('#btn3').mouseenter(function () {
+        let text = $('#btn3').text() + 'Hovered';
+        $('#btn3').text(text);
+    });
+    $('#btn3').mouseleave(function () {
+        $('#btn3').text('Danger');
+    });
+    $("#btn4").click(function () {
+        $("p").hide();
+    });
+
+    $("#btn4").click(function () {
+        $("p").show();
+    });
+    $('#btn4').tooltip(options)
+
+</script>
+
+</html>
