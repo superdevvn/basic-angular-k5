@@ -23,9 +23,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/assets/Admin-lte/dist/css/AdminLTE.min.css",
+              "src/assets/Admin-lte/dist/css/skins/_all-skins.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/Admin-lte/dist/js/app.min.js"
+            ]
           },
           "configurations": {
             "production": {
