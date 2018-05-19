@@ -10,7 +10,7 @@ import { RoleDetailComponent } from './role-detail/role-detail.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
   {
     path: 'main', component: MainComponent, children: [
       { path: 'role-list', component: RoleListComponent },
