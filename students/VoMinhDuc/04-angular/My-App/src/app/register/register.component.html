@@ -1,14 +1,14 @@
 <div class="container mb-3 col-lg-6 border border-secondary">
     <div class="form-group">
         <label for="yourname">*Name:</label>
-        <input type="text" class="form-control" [(ngModel)]="yourname" placeholder="Please Enter Your Name...">
+        <input type="text" class="form-control is-invalid" [(ngModel)]="yourname" placeholder="Please Enter Your Name...">
     </div>
     <div class="form-group">
         <label for="birthday">*Birthday:</label>
         <input type="date" class="form-control" [(ngModel)]="birthday">
     </div>
     <div class="form-row">
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-4">
             <label for="city">*City:</label>
             <input type="text" class="form-control" [(ngModel)]="city" placeholder="Ho Chi Minh">
         </div>
@@ -27,8 +27,12 @@
                 <option>Vietnam</option>
             </select>
         </div>
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-4">
+<<<<<<< HEAD
             <label for="zipcode">*Zip code:</label>
+=======
+            <label>Zip code <span class="text-danger">*</span></label>
+>>>>>>> 264703a7cce4d6d4dc72a9c1cf0c14caa2b59573
             <input type="text" class="form-control" [(ngModel)]="zipcode" placeholder="700000">
         </div>
     </div>
@@ -36,7 +40,13 @@
         <label for="email">*Email:</label>
         <div class="input-group">
             <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
+<<<<<<< HEAD
+                <div class="input-group-text">
+                    <i class="fa fa-envelope text-info"></i>
+                </div>
+=======
+                <div class="input-group-text"><i class="fa fa-envelope text-primary"></i></div>
+>>>>>>> 264703a7cce4d6d4dc72a9c1cf0c14caa2b59573
             </div>
             <input type="text" class="form-control" [(ngModel)]="email" placeholder="minhduc@email.ac.vn">
         </div>
@@ -59,12 +69,21 @@
         </div>
     </div>
     <div class="form-row">
-        <div class="col-md-4">
-            <span>
+        <div class="col-md-6">
+            <label class="custom-control custom-checkbox">
+<<<<<<< HEAD
+                <input type="checkbox" class="custom-control-input" [(ngModel)]="agreecheck">
+=======
+                <input type="checkbox" [(ngModel)]="agreecheck" class="custom-control-input">
+>>>>>>> 264703a7cce4d6d4dc72a9c1cf0c14caa2b59573
+                <span class="custom-control-label"></span>
+                <span class="custom-control-description">I agree to the terms</span>
+            </label>
+            <!-- <span>
                 <input type="checkbox" [(ngModel)]="agreecheck"> I agree to the terms
-            </span>
+            </span> -->
         </div>
-        <div class="col-md-8 text-right">
+        <div class="col-md-6 text-right">
             <button class="btn btn-info" (click)="Register();">Register</button>
         </div>
     </div>

@@ -25,14 +25,25 @@ export class RegisterComponent implements OnInit {
   }
 
   Register(){
+<<<<<<< HEAD
+    if (!this.yourname) this.yourname = 'MDUCPTIT';
+    if (!this.birthday) this.birthday = new Date();
+    if (!this.city) this.city = 'NULL';
+    if (!this.state) this.state = 'NULL';
+    if (!this.zipcode) this.zipcode = 'NULL';
+    if (!this.email) this.email = 'NULL';
+    if (!this.dauso) this.dauso = '###-';
+    if (!this.phonenumber) this.phonenumber = '######';
+=======
     if (this.yourname == '') this.yourname = 'MDUCPTIT';
-    if (this.birthday == '') this.birthday = 'NULL';
+    if (!this.birthday) this.birthday = new Date();
     if (this.city == '') this.city = 'NULL';
     if (this.state == '') this.state = 'NULL';
     if (this.zipcode == '') this.zipcode = 'NULL';
     if (this.email == '') this.email = 'NULL';
     if (this.dauso == '') this.dauso = '###-';
     if (this.phonenumber == '') this.phonenumber = '######';
+>>>>>>> 264703a7cce4d6d4dc72a9c1cf0c14caa2b59573
     if (this.agreecheck) this.verify='The account is successfully verified!';
     else this.verify='The account was not successfully verified!';
     console.log(this.verify);
@@ -43,6 +54,7 @@ export class RegisterComponent implements OnInit {
     console.log(this.zipcode);
     console.log(this.dauso + this.phonenumber);
     console.log(this.agreecheck);
+    // '', null, underfined, false, 0, NaN (not a number)
   }
 
 }
