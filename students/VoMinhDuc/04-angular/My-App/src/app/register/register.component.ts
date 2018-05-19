@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
 
   Register(){
     if (this.yourname == '') this.yourname = 'MDUCPTIT';
-    if (this.birthday == '') this.birthday = 'NULL';
+    if (!this.birthday) this.birthday = new Date();
     if (this.city == '') this.city = 'NULL';
     if (this.state == '') this.state = 'NULL';
     if (this.zipcode == '') this.zipcode = 'NULL';
