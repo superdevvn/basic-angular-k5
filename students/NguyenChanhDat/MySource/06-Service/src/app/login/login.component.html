@@ -1,0 +1,11 @@
+ <div class="form-group col-md-4">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" placeholder="username" [(ngModel)]="username">
+    </div>
+    <div class="form-group col-md-4">
+        <label for="username">Password</label>
+        <input type="password" class="form-control" placeholder="password" [(ngModel)]="password">
+    </div>
+<div class="clearfix"></div>
+<button class="btn btn-info" (click)="login()">Login</button>
+<a [routerLink]="['/main']" class="btn btn-warning">Login</a>
