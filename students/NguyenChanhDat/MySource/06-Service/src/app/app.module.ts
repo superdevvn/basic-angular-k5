@@ -1,13 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import  {Routes, RouterModule} from '@angular/router'
+import  {Routes, RouterModule} from '@angular/router';
+import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { RoleListComponent } from './role-list/role-list.component';
 import { RoleDetailComponent } from './role-detail/role-detail.component';
 import { LoginComponent } from './login/login.component';
-import { FormsModule} from '@angular/forms';
+import { UtilityService } from './services/utility.service';
+import { ApiService } from './services/api.service';
+import { HttpModule } from '@angular/http';
 
 const routes: Routes =[
 {path:'',redirectTo:'login',pathMatch:'full'},
@@ -27,10 +30,11 @@ const routes: Routes =[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [UtilityService,ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
