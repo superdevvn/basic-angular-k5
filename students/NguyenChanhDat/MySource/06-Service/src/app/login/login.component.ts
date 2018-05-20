@@ -31,4 +31,29 @@ export class LoginComponent implements OnInit {
     });
     // this.router.navigate(['main']);
   }
+  getUser(){
+    this.ApiService.post('http://103.232.121.69:5201/api/getUsers', {
+
+    });
+  }
+  getBooks(){
+    this.ApiService.post('http://103.232.121.69:5201/api/getBooks', {
+
+    });
+  }
+  getCategories(){
+    this.ApiService.post('http://103.232.121.69:5201/api/getCategories', {
+
+    });
+  }
+  getRoles(){
+    this.ApiService.post('http://103.232.121.69:5201/api/getRoles', {
+
+    });
+  }
+  getInOuts(){
+    this.ApiService.post('http://103.232.121.69:5201/api/getInOuts', {
+
+    });
+  }
 }
