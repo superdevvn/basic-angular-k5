@@ -1,2 +1,9 @@
-<button class="btn btn-primary" (click) = "login()"> Login</button>
+<input class="form-control" [(ngModel)]="username">
+<input class="form-control" [(ngModel)]="password">
+<button class="btn btn-primary" (click)="login()"> Login</button>
+<button class="btn btn-primary" (click)="getUsers()"> getUsers</button>
+<button class="btn btn-primary" (click)="getBooks()"> getBooks</button>
+<button class="btn btn-primary" (click)="getRoles()"> getRoles</button>
+<button class="btn btn-primary" (click)="getCategories()"> getCategories</button>
+<button class="btn btn-primary" (click)="getInOuts()"> getInOuts</button>
 <!-- <a [routerLink] = "['/main']" class="btn btn-warning"> Login</a> -->

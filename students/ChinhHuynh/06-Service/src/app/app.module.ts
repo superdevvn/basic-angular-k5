@@ -10,6 +10,8 @@ import { Route } from '@angular/compiler/src/core';
 import { LoginComponent } from './login/login.component';
 import { UtilityService } from './services/utility.service';
 import { ApiService } from './services/api.service';
+import { HttpModule } from '@angular/http';
+import {FormsModule} from '@angular/forms'
 
 const routes: Routes = [
   {path: '', redirectTo: 'main', pathMatch: 'full'},
@@ -30,6 +32,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [UtilityService, ApiService],
