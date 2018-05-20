@@ -1,2 +1,4 @@
-<button class="btn btn-primary" (click)="login()">Login</button>
-<a [routerLink]="['/main']" class="btn btn-warning">Login</a>
+<input class="form-control" [(ngModel)]="username">
+<input type="password" class="form-control" [(ngModel)]="password">
+<button class="btn btn-primary" (click)="login(username,password)">Login</button>
+<button class="btn btn-primary" (click)="getUsers()">Get Users</button>
