@@ -1,0 +1,17 @@
+<div class="form-group col-md-4">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" placeholder="username" [(ngModel)]="username">
+</div>
+<div class="form-group col-md-4">
+    <label for="username">Password</label>
+    <input type="password" class="form-control" placeholder="password" [(ngModel)]="password">
+</div>
+<div class="clearfix"></div>
+<button class="btn btn-info" (click)="login()">
+    <i class="fa fa-android"> </i>Login</button>
+<!-- <a [routerLink]="['/main']" class="btn btn-warning">Login</a> -->
+<button class="btn btn-danger" (click)="getUser()"> Login</button>
+<button class="btn btn-dark" (click)="getBooks()"> Login</button>
+<button class="btn btn-primary" (click)="getCategories()"> Login</button>
+<button class="btn btn-warning" (click)="getRoles()"> Login</button>
+<button class="btn btn-secondary" (click)="getInOuts()"> Login</button>

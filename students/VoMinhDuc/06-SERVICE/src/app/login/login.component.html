@@ -1,0 +1,14 @@
+<div class="col-md-4">
+    <p>
+        <label>*Username: </label>
+        <input type="text" class="form-control" [(ngModel)]="username">
+    </p>
+    <p>
+        <label>*Password: </label>
+        <input type="password" class="form-control" [(ngModel)]="password">
+    </p>
+    <button class="btn btn-primary" (click)="login();">
+        <i class="fa fa-check-circle"></i> Login</button>
+    <a [routerLink]="['/main']" class="btn btn-danger">
+        <i class="fa fa-check-circle"></i> Login</a>
+</div>
